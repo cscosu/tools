@@ -10,7 +10,6 @@ if pwn.args.GDB:
     pwn.gdb.attach(
         target="chall",  # Takes the youngest PID matching this name
         exe="./chall",
-        # target=498104,
         gdbscript="""
 break *0x4001d4
 break *0x400138
